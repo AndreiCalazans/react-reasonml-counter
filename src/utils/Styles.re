@@ -1,19 +1,22 @@
+let styled = ReactDOMRe.Style.make;
 
-let centerStyle = ReactDOMRe.Style.make(
+let styleds = ReactDOMRe.Style.combine;
+
+let centerStyle = styled(
   ~display="flex",
   ~justifyContent="center",
   ~alignItems="center",
   ());
 
-let containerSpace = ReactDOMRe.Style.make(
+let containerSpace = styled(
   ~margin="10px",
   ~padding="10px",
   ());
 
-let row = ReactDOMRe.Style.make(
+let row = styled(
   ~flexDirection="row",
   ());
 
-let column = ReactDOMRe.Style.make(
+let column = styled(
   ~flexDirection="column",
   ());

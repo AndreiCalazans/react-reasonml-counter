@@ -19,11 +19,10 @@ let make = (_children) => {
       let onAdd = (e) => _self.send(Add);
       let onSubtract = (e) => _self.send(Subtract);
       let countMessage = "Count: " ++ string_of_int(_self.state);
-      let comb = ReactDOMRe.Style.combine;
 
-      <div style=comb(comb(containerSpace, centerStyle), column)>
+      <div style=styleds(styleds(containerSpace, centerStyle), column)>
         <p>(ReasonReact.string(countMessage))</p>
-        <div style=comb(centerStyle, row)>
+        <div style=styleds(centerStyle, row)>
           <Container>
             ...<Button onPress=onAdd label="Add" backgroundColor="yellow" />
           </Container>
